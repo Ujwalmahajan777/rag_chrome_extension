@@ -1,0 +1,11 @@
+{
+    "manifest_version": 3,
+    "name": "RAG Chat Assistant",
+    "version": "1.0",
+    "description": "Chat with a RAG-powered assistant on any webpage.",
+    "permissions": ["activeTab", "storage"],
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "RAG Chat Assistant"
+    }
+}

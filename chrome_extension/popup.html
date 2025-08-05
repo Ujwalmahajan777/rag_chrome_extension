@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>RAG Chat Assistant</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h2>RAG Chat Assistant</h2>
+
+    <!-- URL input -->
+    <div class="input-container">
+      <input type="text" id="urlInput" placeholder="Enter webpage URL...">
+      <button id="loadBtn" title="Load URL">
+        <!-- Load Icon (SVG) -->
+        <svg xmlns="http://www.w3.org/2000/svg" height="18" viewBox="0 -960 960 960" width="18" fill="#fff">
+          <path d="M480-80q-82 0-155-31.5T199-199q-54-54-85.5-127T82-480h86q0 117 82.5 199.5T480-198q117 0 199.5-82.5T762-480q0-117-82.5-199.5T480-762q-64 0-121 27.5T263-671l73 73H120v-216l72 72q50-50 114-78t138-28q82 0 155 31.5T761-761q54 54 85.5 127T878-480q0 82-31.5 155T761-199q-54 54-127 85.5T480-80Z"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Chat box -->
+    <div id="chatBox" class="chat-box"></div>
+
+    <!-- Question input -->
+    <div class="input-container">
+      <input type="text" id="questionInput" placeholder="Type your question...">
+      <button id="sendBtn" title="Send">
+        <!-- Send Icon (SVG) -->
+        <svg xmlns="http://www.w3.org/2000/svg" height="18" viewBox="0 -960 960 960" width="18" fill="#fff">
+          <path d="M80-80v-800l800 400-800 400Zm120-120 440-280-440-280v560Z"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
